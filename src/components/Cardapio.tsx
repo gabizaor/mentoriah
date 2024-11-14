@@ -1,6 +1,7 @@
 import { FaLinkedin } from 'react-icons/fa';
 import gabizona from '../assets/mentores/gabizona.png';
 import maria from '../assets/mentores/maria.jpeg';
+import igor from '../assets/mentores/igor.jpg';
 
 export const Cardapio = () => {
     return (
@@ -51,8 +52,8 @@ export const Cardapio = () => {
                     />
                     <div className="space-y-4 mt-4 text-center">
                         <p><span className="font-semibold text-gray-700">Nome e idade:</span> Gabrielly Reis, 23 anos</p>
-                        <p><span className="font-semibold text-gray-700">Bandeira:</span> lésbica</p>
-                        <p><span className="font-semibold text-gray-700">Área de atuação:</span> desenvolvedora frontend</p>
+                        <p><span className="font-semibold text-gray-700">Bandeira:</span> Lésbica</p>
+                        <p><span className="font-semibold text-gray-700">Área de atuação:</span> Desenvolvedora Frontend</p>
                         <p className="text-gray-600">Oi, eu sou a Gabi! :) Sou a idealizadora e desenvolvedora do <span className="font-bold text-gray-800">mentoriah.</span> Me interessei por programação em 2022 e comecei a estudar com os conteúdos que encontrava na internet. Atualmente, trabalho há 8 meses com programação em uma empresa de dashboards baseada em BI.</p>
                         <a
                             href="https://www.linkedin.com/in/gabrielly-reis"
@@ -74,7 +75,7 @@ export const Cardapio = () => {
                     />
                     <div className="space-y-4 mt-4 text-center">
                         <p><span className="font-semibold text-gray-700">Nome e idade:</span> Maria Eduarda Bosquerolli, 25 anos</p>
-                        <p><span className="font-semibold text-gray-700">Bandeira:</span> lésbica</p>
+                        <p><span className="font-semibold text-gray-700">Bandeira:</span> Lésbica</p>
                         <p><span className="font-semibold text-gray-700">Área de atuação:</span> Análise de dados e Operações</p>
                         <p className="text-gray-600">Oi, eu sou a Maria Eduarda! Trabalho com análise de dados e operações e tenho uma paixão por entender e melhorar processos. Espero contribuir e compartilhar conhecimentos com todos que fizerem parte do <span className="font-bold text-gray-800">mentoriah.</span></p>
                         <a
@@ -85,6 +86,31 @@ export const Cardapio = () => {
                         >
                             <FaLinkedin size={24} className="mr-2" /> LinkedIn
                         </a>
+                    </div>
+                </div>
+
+                {/* Igor */}
+                <div className="flex flex-col items-center bg-white px-8 py-10 shadow-lg rounded-xl transition-transform transform hover:scale-105 h-auto">
+                    <img
+                        src={igor}
+                        alt="Imagem de Igor"
+                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md"
+                    />
+                    <div className="space-y-4 mt-4 text-center">
+                        <p><span className="font-semibold text-gray-700">Nome e idade:</span> Igor Soares, 31 anos</p>
+                        <p><span className="font-semibold text-gray-700">Bandeira:</span> Bissexual e Assexual </p>
+                        <p><span className="font-semibold text-gray-700">Área de atuação:</span> Arquitetura e Análise de dados</p>
+                        <p className="text-gray-600">
+                            Oi, eu sou o Igor! Sou consultor de BI com especialização em Qlik e adoro entender bastante os negócios em que atuo, e sempre tento contribuir com melhorias. Tenho alguns anos de experiência na área de dados e adoro compartilhar conhecimento.</p>
+                        <a
+                            href="https://www.linkedin.com/in/igor-soares/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-4"
+                        >
+                            <FaLinkedin size={24} className="mr-2" /> LinkedIn
+                        </a>
+
                     </div>
                 </div>
             </div>
