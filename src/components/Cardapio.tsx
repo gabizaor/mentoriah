@@ -5,8 +5,7 @@ import igor from '../assets/mentores/igor.jpg';
 
 export const Cardapio = () => {
     return (
-        <div className="min-h-screen font-mono flex flex-col items-center justify-center bg-gray-100">
-            {/* Mentorado Section */}
+        <><div className="min-h-screen font-mono flex flex-col items-center justify-center bg-gray-100">
             <div className="py-16">
                 <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center text-gray-800">
                     Passos para o Mentorado
@@ -24,32 +23,36 @@ export const Cardapio = () => {
                     <div className="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
                         <h3 className="text-xl font-semibold text-amber-600 mb-3">Passo 2</h3>
                         <p className="text-gray-700">
-                            Verifique o <span className="font-bold">canal de comunicação</span> que o mentor disponibilizou para contato.
+                            Preencha o formulário no link abaixo para que possamos saber mais sobre você e suas necessidades:
                         </p>
+                        <a
+                            href="https://forms.gle/HHGNACSbjS4G8r6B9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-amber-600 font-bold underline mt-3 block"
+                        >
+                            Preencher Formulário
+                        </a>
                     </div>
 
                     {/* Step 3 */}
                     <div className="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
                         <h3 className="text-xl font-semibold text-amber-600 mb-3">Passo 3</h3>
                         <p className="text-gray-700">
-                            Entre em contato e informe que conheceu o mentor pelo <span className="font-bold">mentoriah</span> para agendar um horário.
+                            Aguarde! Entraremos em contato em breve para dar continuidade ao processo.
                         </p>
                     </div>
                 </div>
             </div>
-
-            <h1 className="font-extrabold text-3xl text-center mb-12 mt-12 text-gray-800">
+        </div><h1 className="font-extrabold text-3xl text-center mb-12 mt-12 text-gray-800">
                 Conheça os nossos mentores:
-            </h1>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl gap-10 px-4">
+            </h1><div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl gap-10 px-4">
                 {/* Gabi */}
                 <div className="flex flex-col items-center bg-white px-8 py-10 shadow-lg rounded-xl transition-transform transform hover:scale-105 h-auto">
                     <img
                         src={gabizona}
                         alt="Imagem de Gabrielly Reis"
-                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md"
-                    />
+                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md" />
                     <div className="space-y-4 mt-4 text-center">
                         <p><span className="font-semibold text-gray-700">Nome e idade:</span> Gabrielly Reis, 23 anos</p>
                         <p><span className="font-semibold text-gray-700">Bandeira:</span> Lésbica</p>
@@ -66,13 +69,35 @@ export const Cardapio = () => {
                     </div>
                 </div>
 
+                {/* Igor */}
+                <div className="flex flex-col items-center bg-white px-8 py-10 shadow-lg rounded-xl transition-transform transform hover:scale-105 h-auto">
+                    <img
+                        src={igor}
+                        alt="Imagem de Igor"
+                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md" />
+                    <div className="space-y-4 mt-4 text-center">
+                        <p><span className="font-semibold text-gray-700">Nome e idade:</span> Igor Soares, 31 anos</p>
+                        <p><span className="font-semibold text-gray-700">Bandeira:</span> Bissexual e Assexual </p>
+                        <p><span className="font-semibold text-gray-700">Área de atuação:</span> Arquitetura e Análise de dados</p>
+                        <p className="text-gray-600">
+                            Oi, eu sou o Igor! Sou consultor de BI com especialização em Qlik e adoro entender bastante os negócios em que atuo, e sempre tento contribuir com melhorias. Tenho alguns anos de experiência na área de dados e adoro compartilhar conhecimento.</p>
+                        <a
+                            href="https://www.linkedin.com/in/igor-soares/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-4"
+                        >
+                            <FaLinkedin size={24} className="mr-2" /> LinkedIn
+                        </a>
+                    </div>
+                </div>
+
                 {/* Maria Eduarda */}
                 <div className="flex flex-col items-center bg-white px-8 py-10 shadow-lg rounded-xl transition-transform transform hover:scale-105 h-auto">
                     <img
                         src={maria}
                         alt="Imagem de Maria Eduarda Bosquerolli"
-                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md"
-                    />
+                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md" />
                     <div className="space-y-4 mt-4 text-center">
                         <p><span className="font-semibold text-gray-700">Nome e idade:</span> Maria Eduarda Bosquerolli, 25 anos</p>
                         <p><span className="font-semibold text-gray-700">Bandeira:</span> Lésbica</p>
@@ -88,32 +113,6 @@ export const Cardapio = () => {
                         </a>
                     </div>
                 </div>
-
-                {/* Igor */}
-                <div className="flex flex-col items-center bg-white px-8 py-10 shadow-lg rounded-xl transition-transform transform hover:scale-105 h-auto">
-                    <img
-                        src={igor}
-                        alt="Imagem de Igor"
-                        className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md"
-                    />
-                    <div className="space-y-4 mt-4 text-center">
-                        <p><span className="font-semibold text-gray-700">Nome e idade:</span> Igor Soares, 31 anos</p>
-                        <p><span className="font-semibold text-gray-700">Bandeira:</span> Bissexual e Assexual </p>
-                        <p><span className="font-semibold text-gray-700">Área de atuação:</span> Arquitetura e Análise de dados</p>
-                        <p className="text-gray-600">
-                            Oi, eu sou o Igor! Sou consultor de BI com especialização em Qlik e adoro entender bastante os negócios em que atuo, e sempre tento contribuir com melhorias. Tenho alguns anos de experiência na área de dados e adoro compartilhar conhecimento.</p>
-                        <a
-                            href="https://www.linkedin.com/in/igor-soares/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-4"
-                        >
-                            <FaLinkedin size={24} className="mr-2" /> LinkedIn
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div></>
     );
 };
