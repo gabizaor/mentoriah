@@ -2,11 +2,13 @@ import { FaLinkedin } from "react-icons/fa";
 import gabizona from "../assets/mentores/gabizona.png";
 import igor from "../assets/mentores/igor.jpg";
 import amanda from "../assets/mentores/amanda.jpg";
+import rebeca from "../assets/mentores/rebeca.jpg";
+import ketlen from "../assets/mentores/ketlen.jpg";
 
 const mentors = [
   {
     name: "Gabrielly Reis",
-    age: 23,
+    age: 24,
     flag: "Lésbica",
     area: "Desenvolvedora Frontend",
     description:
@@ -33,6 +35,26 @@ const mentors = [
       "Oi, eu sou a Amanda! Trabalho hoje na área de Talento Humano como Sr. Recruiter e sou estudante de Design Gráfico. Integro o mentoriah atuando na criação da identidade e nas estratégias de marketing digital. Estou muito motivada em contribuir com o crescimento desse projeto e trazer novas perspectivas de comunicação visual.",
     image: amanda,
     linkedin: "https://www.linkedin.com/in/amanda-ferreira-311745183/",
+  },
+  {
+    name: "Rebeca Moura",
+    age: 32,
+    flag: "Bissexual e Não-Binárie",
+    area: "Desenvolvimento Full Stack",
+    description:
+      "Oi, eu sou o Goku... quer dizer, Rebeca! Sou engenheira de computação e atuo como desenvolvedora Full Stack, com experiência em Python (Django e Flask), JavaScript, React e WordPress (PHP). Também trabalho com pesquisa aplicada, especialmente nas áreas de software livre, ciência aberta e sistemas para bibliotecas digitais. Sou mestre em Engenharia de Sistemas Eletrônicos e de Automação, e já desenvolvi projetos envolvendo eletrônica computacional e algoritmos de deep learning aplicados ao sensoriamento remoto.",
+    image: rebeca,
+    linkedin: "http://lattes.cnpq.br/8677193043257356",
+  },
+  {
+    name: "Ketlen Fernandes",
+    age: 28,
+    flag: "Lésbica",
+    area: "Engenharia de Dados",
+    description:
+      "Olá, sou a Ketlen! Atuo como consultora de engenharia de dados há mais de 3 anos, com especialização em Microsoft Azure e Databricks. Sempre gostei de tecnologia, e na faculdade me interessei pela área de dados. Adoro a ideia de poder compartilhar conhecimento e estou aqui para ajudar.",
+    image: ketlen,
+    linkedin: "https://www.linkedin.com/in/ketlen-fernandes/",
   },
 ];
 
