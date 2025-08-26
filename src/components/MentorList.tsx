@@ -2,11 +2,14 @@ import { FaLinkedin } from "react-icons/fa";
 import gabizona from "../assets/mentores/gabizona.png";
 import igor from "../assets/mentores/igor.jpg";
 import amanda from "../assets/mentores/amanda.jpg";
+import rebeca from "../assets/mentores/rebeca.jpg";
+import ketlen from "../assets/mentores/ketlen.jpg";
+import luana from "../assets/mentores/luana.png";
 
 const mentors = [
   {
     name: "Gabrielly Reis",
-    age: 23,
+    age: 24,
     flag: "Lésbica",
     area: "Desenvolvedora Frontend",
     description:
@@ -16,7 +19,7 @@ const mentors = [
   },
   {
     name: "Igor Soares",
-    age: 31,
+    age: 32,
     flag: "Bissexual e Assexual",
     area: "Arquitetura e Análise de dados",
     description:
@@ -26,7 +29,7 @@ const mentors = [
   },
   {
     name: "Amanda Ferreira Gorino",
-    age: 31,
+    age: 32,
     flag: "Bissexual",
     area: "Design gráfico e Recrutamento",
     description:
@@ -34,6 +37,37 @@ const mentors = [
     image: amanda,
     linkedin: "https://www.linkedin.com/in/amanda-ferreira-311745183/",
   },
+  {
+    name: "Rebeca Moura",
+    age: 32,
+    flag: "Bissexual e Não-Binárie",
+    area: "Desenvolvimento Full Stack",
+    description:
+      "Oi, eu sou o Goku... quer dizer, Rebeca! Sou engenheira de computação e atuo como desenvolvedora Full Stack, com experiência em Python (Django e Flask), JavaScript, React e WordPress (PHP). Também trabalho com pesquisa aplicada, especialmente nas áreas de software livre, ciência aberta e sistemas para bibliotecas digitais. Sou mestre em Engenharia de Sistemas Eletrônicos e de Automação, e já desenvolvi projetos envolvendo eletrônica computacional e algoritmos de deep learning aplicados ao sensoriamento remoto.",
+    image: rebeca,
+    linkedin: "http://lattes.cnpq.br/8677193043257356",
+  },
+  {
+    name: "Ketlen Fernandes",
+    age: 28,
+    flag: "Lésbica",
+    area: "Engenharia de Dados",
+    description:
+      "Olá, sou a Ketlen! Atuo como consultora de engenharia de dados há mais de 3 anos, com especialização em Microsoft Azure e Databricks. Sempre gostei de tecnologia, e na faculdade me interessei pela área de dados. Adoro a ideia de poder compartilhar conhecimento e estou aqui para ajudar.",
+    image: ketlen,
+    linkedin: "https://www.linkedin.com/in/ketlen-fernandes/",
+  },
+  {
+    name: "Luana Cajaiba",
+    age: 28,
+    flag: "Bissexual",
+    area: "Front-end e Desenvolvimento Mobile",
+    description:
+      "Sou Luana, desenvolvedora apaixonada por tecnologia, com foco em front-end (JavaScript) e mobile (Flutter). Mais que codar, sou uma eterna estudante, e é isso que me motiva estar na mentoria.",
+    image: luana,
+    linkedin: "https://www.linkedin.com/in/luanacajaiba/",
+  },
+
 ];
 
 export const MentorList = () => {
@@ -49,7 +83,7 @@ export const MentorList = () => {
             alt={`Imagem de ${mentor.name}`}
             className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md"
           />
-          <div className="space-y-4 mt-4 text-center">
+          <div className="space-y-4 mt-4 text-center flex-1 flex flex-col">
             <p>
               <span className="font-semibold text-gray-700">Nome e idade:</span>{" "}
               {mentor.name}, {mentor.age} anos
@@ -64,12 +98,12 @@ export const MentorList = () => {
               </span>{" "}
               {mentor.area}
             </p>
-            <p className="text-gray-600">{mentor.description}</p>
+            <p className="text-gray-600 flex-1">{mentor.description}</p>
             <a
               href={mentor.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-4"
+              className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-auto pt-4"
             >
               <FaLinkedin size={24} className="mr-2" /> LinkedIn
             </a>
