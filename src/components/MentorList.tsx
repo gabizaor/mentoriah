@@ -4,6 +4,7 @@ import igor from "../assets/mentores/igor.jpg";
 import amanda from "../assets/mentores/amanda.jpg";
 import rebeca from "../assets/mentores/rebeca.jpg";
 import ketlen from "../assets/mentores/ketlen.jpg";
+import luana from "../assets/mentores/luana.png";
 
 const mentors = [
   {
@@ -18,7 +19,7 @@ const mentors = [
   },
   {
     name: "Igor Soares",
-    age: 31,
+    age: 32,
     flag: "Bissexual e Assexual",
     area: "Arquitetura e Análise de dados",
     description:
@@ -28,7 +29,7 @@ const mentors = [
   },
   {
     name: "Amanda Ferreira Gorino",
-    age: 31,
+    age: 32,
     flag: "Bissexual",
     area: "Design gráfico e Recrutamento",
     description:
@@ -56,6 +57,17 @@ const mentors = [
     image: ketlen,
     linkedin: "https://www.linkedin.com/in/ketlen-fernandes/",
   },
+  {
+    name: "Luana Cajaiba",
+    age: 28,
+    flag: "Bissexual",
+    area: "Front-end e Desenvolvimento Mobile",
+    description:
+      "Sou Luana, desenvolvedora apaixonada por tecnologia, com foco em front-end (JavaScript) e mobile (Flutter). Mais que codar, sou uma eterna estudante, e é isso que me motiva estar na mentoria.",
+    image: luana,
+    linkedin: "https://www.linkedin.com/in/luanacajaiba/",
+  },
+
 ];
 
 export const MentorList = () => {
@@ -71,7 +83,7 @@ export const MentorList = () => {
             alt={`Imagem de ${mentor.name}`}
             className="w-32 h-32 rounded-full border-4 border-gray-200 object-cover shadow-md"
           />
-          <div className="space-y-4 mt-4 text-center">
+          <div className="space-y-4 mt-4 text-center flex-1 flex flex-col">
             <p>
               <span className="font-semibold text-gray-700">Nome e idade:</span>{" "}
               {mentor.name}, {mentor.age} anos
@@ -86,12 +98,12 @@ export const MentorList = () => {
               </span>{" "}
               {mentor.area}
             </p>
-            <p className="text-gray-600">{mentor.description}</p>
+            <p className="text-gray-600 flex-1">{mentor.description}</p>
             <a
               href={mentor.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-4"
+              className="text-blue-600 hover:text-blue-800 flex items-center justify-center mt-auto pt-4"
             >
               <FaLinkedin size={24} className="mr-2" /> LinkedIn
             </a>
