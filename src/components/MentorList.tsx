@@ -9,17 +9,17 @@ import luana from "../assets/mentores/luana.png";
 const mentors = [
   {
     name: "Gabrielly Reis",
-    age: 24,
+    age: 25,
     flag: "Lésbica",
     area: "Desenvolvedora Frontend",
     description:
-      "Oi, eu sou a Gabi! :) Sou a idealizadora e desenvolvedora do mentoriah. Me interessei por programação em 2022 e comecei a estudar com os conteúdos que encontrava na internet. Atualmente, trabalho há 8 meses com programação em uma empresa de dashboards baseada em BI.",
+      "Oi, eu sou a Gabi! :) Sou a idealizadora e desenvolvedora do mentoriah. Me interessei por programação em 2022 e comecei a estudar com os conteúdos que encontrava na internet. Atualmente, trabalho há 2 com desenvolvimento frontend.",
     image: gabizona,
     linkedin: "https://www.linkedin.com/in/gabrielly-reis",
   },
   {
     name: "Igor Soares",
-    age: 32,
+    age: 33,
     flag: "Bissexual e Assexual",
     area: "Arquitetura e Análise de dados",
     description:
@@ -29,7 +29,7 @@ const mentors = [
   },
   {
     name: "Amanda Ferreira Gorino",
-    age: 32,
+    age: 33,
     flag: "Bissexual",
     area: "Design gráfico e Recrutamento",
     description:
@@ -39,7 +39,7 @@ const mentors = [
   },
   {
     name: "Rebeca Moura",
-    age: 32,
+    age: 33,
     flag: "Bissexual e Não-Binárie",
     area: "Desenvolvimento Full Stack",
     description:
@@ -49,7 +49,7 @@ const mentors = [
   },
   {
     name: "Ketlen Fernandes",
-    age: 28,
+    age: 29,
     flag: "Lésbica",
     area: "Engenharia de Dados",
     description:
@@ -59,7 +59,7 @@ const mentors = [
   },
   {
     name: "Luana Cajaiba",
-    age: 28,
+    age: 29,
     flag: "Bissexual",
     area: "Front-end e Desenvolvimento Mobile",
     description:
